@@ -42,24 +42,28 @@ class Promotion extends React.Component {
 	  }
 	}
 
-const promos = ['TGVES', 'OEIJR', 'IUEHF'];
+	class PromotionsList extends React.Component {
 
-promos.forEach(function(promoId) {
-	let col = document.createElement("div");
-	col.setAttribute('class', 'col-4');
-	col.setAttribute('style', 'margin-bottom:30px;');
-	
-	let card = document.createElement("div");
-	card.setAttribute('class', 'card h-100');
+		constructor(props) {
+			super(props);
+		}
 
-	let div = document.createElement("div");
-	div.setAttribute('id', promoId);
-	div.setAttribute('class', 'card-body');
+		render() {
+			let promosList = this.props.promos.map(function(promo){
+				let promoUrl = liferayDXP_URL+"/o/headless-delivery/v1.0/sites/"+liferaySiteId+"/structured-contents?filter=title eq '"+promo+"'&fields=contentFields";
+				let element = (
+				<div className='col-4'>
+					<div className='card h-100'>
+						<div className='card-body'>
+							<Promotion id={promo} url={promoUrl} />
+						</div>
+					</div>
+				</div>
+				);
+			return element;
+			})
+			return  <div className='card-group'>{ promosList }</div>
+		}
+	};
 
-	col.append(card);
-	card.append(div);
-	document.querySelector('#promocoes').append(col)
-
-	let _getPromoUrl = liferayDXP_URL+"/o/headless-delivery/v1.0/sites/"+liferaySiteId+"/structured-contents?filter=title eq '"+promoId+"'&fields=contentFields";
-	ReactDOM.render(React.createElement(Promotion, {id: promoId, url: _getPromoUrl}, null), document.querySelector('#'+promoId));
-});
+ReactDOM.render(<PromotionsList promos={['TGVES','OEIJR', 'IUEHF']}/>, document.querySelector('#promocoes'));
