@@ -66,4 +66,4 @@ class Promotion extends React.Component {
 		}
 	};
 
-ReactDOM.render(<PromotionsList promos={['TGVES','OEIJR', 'IUEHF']}/>, document.querySelector('#promocoes'));
+ReactDOM.render(<PromotionsList promos={['TGVES','OEIJR', 'IUEHF', 'ADAHV']}/>, document.querySelector('#promocoes'));
