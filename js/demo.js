@@ -28,7 +28,7 @@ class Promotion extends React.Component {
 	  }
 	}
 
-const promos = ['FVREY', 'IDIJB', 'EGJKV', 'CFEVB', 'FVBKN', 'TGVES'];
+const promos = ['FVREY', 'IDIJB', 'EGJKV', 'CFEVB', 'FVBKN'];
 
 promos.forEach(function(promoId) {
 	let col = document.createElement("div");
