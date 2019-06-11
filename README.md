@@ -8,9 +8,11 @@ A very simple example of React with Liferay DXP Headless API
 
 How to integrate with Liferay DXP 7.2
 
-1. Config your Liferay DXP for allow CORS: You can go to System Settings -> Security Tools -> Portal Cross Resource Origin Sharing (CORS)
-2. Create a structure using the example: 
-3. Create a new webcontent based on the structure above
-4. Set a tag 'promocao' to the new webcontent
-5. Open your react sigle page demo3.html.
-6. All contents with the tag 'promocao' will be rendered on it.
+1. Start your Liferay DXP 7.2
+2. Config your Liferay DXP for allow CORS: You can go to System Settings -> Security Tools -> Portal Cross Resource Origin Sharing (CORS)
+3. Create a structure using the example: 
+4. Create a new webcontent based on the structure above
+5. Set a tag 'promocao' to the new webcontent
+6. If needed, edit the file /js/demo3.js and set your Liferay DXP domain (default is localhost:8080). Also edit your siteId (default is 20123)
+7. Open your react sigle page demo3.html.
+8. All contents with the tag 'promocao' will be rendered on it.
