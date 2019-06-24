@@ -9,7 +9,7 @@ A very simple example of React with Liferay DXP Headless API
 How to integrate with Liferay DXP 7.2
 
 1. Start your Liferay DXP 7.2
-2. Login with user `test@liferay.com, update the password to: `teste` (!Important: this user/password is going to be used by the react application, that's why you must to config it correctly)
+2. Login with user `test@liferay.com`, update the password to: `teste` (!Important: this user/password is going to be used by the react application, that's why you must to config it correctly)
 3. Config your Liferay DXP for allow CORS: You can go to System Settings -> Security Tools -> Portal Cross Resource Origin Sharing (CORS)
 4. Create a structure using the example: https://gist.github.com/marceltanuri/415011efb0ff711fe2f6c90812a8340b
 5. Create a new webcontent based on the structure above
