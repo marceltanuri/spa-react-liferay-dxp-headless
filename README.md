@@ -10,7 +10,7 @@ How to integrate with Liferay DXP 7.2
 
 1. Start your Liferay DXP 7.2
 2. Config your Liferay DXP for allow CORS: You can go to System Settings -> Security Tools -> Portal Cross Resource Origin Sharing (CORS)
-3. Create a structure using the example: 
+3. Create a structure using the example: https://gist.github.com/marceltanuri/415011efb0ff711fe2f6c90812a8340b
 4. Create a new webcontent based on the structure above
 5. Set a tag 'promocao' to the new webcontent
 6. If needed, edit the file /js/demo3.js and set your Liferay DXP domain (default is localhost:8080). Also set your siteId (default is 20123)
