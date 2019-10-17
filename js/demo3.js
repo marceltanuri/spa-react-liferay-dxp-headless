@@ -1,4 +1,4 @@
-const liferayDXP_URL = 'http://localhost:8080';
+const liferayDXP_URL = 'https://webserver-liferaymarceltanuri-prd.lfr.cloud';
 const liferaySiteId = 20123;
 
 class Promotion extends React.Component {
