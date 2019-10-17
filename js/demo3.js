@@ -61,5 +61,5 @@ class Promotion extends React.Component {
 		}
 	};
 
-let filteringTag = 'promocao';
+let filteringTag = 'promo';
 ReactDOM.render(<PromotionsList getPromosUrl={liferayDXP_URL + "/o/headless-delivery/v1.0/sites/"+liferaySiteId+"/structured-contents?filter=keywords/any(k:k eq '"+filteringTag+"')"}/>, document.querySelector('#promocoes'));
